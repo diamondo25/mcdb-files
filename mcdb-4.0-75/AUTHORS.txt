@@ -1,0 +1,12 @@
+Project Contributors:
+Wizet/Nexon - Creators and copyright holders of MapleStory(tm): Check out their awesome service at maplestory.nexon.net !
+Doyos - Lots of data
+LazyBui - Non-GM shops
+Fiel - Provided a script
+Snow - Provided information about drops being in Monster Book data and various things about drop chance data
+Bri - Various extraordinary help
+KilledWhale - Provided pet data
+zinmirai - Gave some SQL tips
+pawitp - Debugging help/critique/some new ideas
+ExtremeDevilz - Hi buddy!
+Others - Stuff

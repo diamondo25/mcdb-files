@@ -1,0 +1,14 @@
+Coordinator: MCDB Team
+Project: Maple Community Database
+Description: A database compiled from various sources for use by the Maple Story(tm) gaming community.
+Version: Rev 2.8
+Code Name: Cygnus Characters Suck
+
+:: Instructions ::
+To use the MySQL dump in order to add this database to MySQL, you either need to import it if you use a graphical client, or simply open a command prompt[Start->run->cmd] and enter the following. Please note that if you get command not found errors, you need to add the path to your MySQL binaries into the windows PATH variable and make certain you are in the directory containing anondb.sql. MySQL gives you an option to do this upon installation. The command is as follows:
+
+mysql -u root -p mcdb < mcdb.sql
+
+Note: Replace "mcdb" with the name of the database/schema you wish to use.
+
+NOTICE: Be sure to look at and agree to the licence information, found in LICENCE, before using or redistributing this software.

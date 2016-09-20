@@ -1,0 +1,83 @@
+3.0:
+~!Increased maximum drop integer to 100% drop = 1 million (1,000,000)
+~ Modified drop rates of most items
+~ Modified meso drops (all credit to Bri)
+~ Fixed mob data parsing
+~ Fixed mob skill data parsing
+~ Fixed quest reward data parsing
+~ Fixed up numerous tables and reordered some
++ Added monster card buff stuff to itemdata
++ Added flying and "friendly" mob info to mobdata
++ Added buffs and proper skill rewards to quest reward data
++ Added timemob processing to mapdata
++ Added proper banish support
++ Added reactor repeat/timeout data
++ Added real script name data for reactors, NPCs, and quests
++ Added mpp/mobcount to skilldata
+
+2.8:
+++Added facedata, hairdata, and skindata tables
+++Added dropglobaldata table
++ Added quest strings to stringdata
+
+2.7:
+~ Modified mob skill x/y to int(11)
+~ Updated shop data
+++Added mapseatdata, monstercarddata, continentdata tables
++ Added itemdata.hasmapeffect
++ Added shopitemdata.quantity
++ Added mapreactordata.link
++ Added mobdata.link, mobdata.buff, mobdata.publicreward, mobdata.explosivereward
++ Added skilldata.damage
+
+2.6:
+- Removed action column from mobskilldata, it indicates an animation, which we don't care about
+- Removed elemAttr column from mobskills, it was only used for one skill
++ Added summoneffect column to mobskills
++ Added selfdestruction column to mobdata
+~ Redid numerous mobskill table columns to better suit their data
+~ Fixed rb/lt to ltx/lty and rbx/rby.
+
+2.5.2:
++ Added maple_version column to mcdb_info
+
+2.5.1:
+~ Ran SQL file to fix scroll drop rates and restored horntail and NX Slime drops.
+
+2.5:
++ Added columns top, left, right, and bottom to mapdata. These are map boundries.
++ Added column town to mapdata, to tell whether or not a map is a town.
++ Added columns randstat and recover to itemdata. These determine whether or not a scroll gives random stats or recovers slots.
++ Added column ailment to itemdata. This determines which ailments an item cures. [curse: 1, weakness: 2, darkness: 4, seal: 8, poison: 16 - Items which cure multiples of each ailment are derived from the sum of each ailment's numbers. All cures have an ailment value of 31 since they cure them all, and holy water has an ailment value of 9 since it cures curse and seal.]
+++Added tables mobskills, mobskillsummons tables.
+- Removed deprecated deathdelay column from mobdata, and added undead boolean.
+~ Now using .68 WZ information.
+
+2.4:
++ Added rechargedata and other tables/columns by Bui
++ Now using .66 WZ info
+
+2.3:
++ Added deathdelay to mobdata, containing the overall delay for a mob's death.
++ Added autoconsume column to itemdata after morph.
+~ Adjusted some columns in mobdata to unsigned due to them never being below 0.
+
+2.2:
+~+Golden Slime NX drops now based on auto-generated list of non Pet Equip cash items
+~ Drop chances altered to better fit with GMS drop rates
+~ Cleaned up a few meso drop entries
+~ Renamed `dropdata.mobid` to `dropdata.dropperid`
+
+2.1:
+!~Fixed improper portal IDs caused by some odd reordering
++ New shop data for Singapore and other areas by Bui.
++ Improved GM shop contents
+
+2.0:
+~+Merged reactordropdata and mobdropdata tables into dropdata, and did a reorganisation of the table for clarity.
+!~Drop chances are now based on 100000 as the max value for chance, rather than 10000.
+++New drop database based on Monster Book information by Doyos with Golden Slime NX drops by Bri.
+~~Renamed toid in mapportaldata to tomap to better reflect meanings of acryonyms and better describe the variable
+
+1.0:
+==Initial Release of MCDB
